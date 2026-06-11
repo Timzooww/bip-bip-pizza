@@ -23,7 +23,7 @@ body {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 60px 20px;
+  padding: 50px 20px;
   background: #ffccbc;
 }
 
@@ -67,6 +67,7 @@ body {
   background: #ffe0b2;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 15px;
@@ -74,7 +75,28 @@ footer {
   color: white;
 }
 
-/* ANIMATION */
+/* FILTRES */
+.filters {
+  text-align: center;
+  margin: 20px;
+}
+
+.filters button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #e53935;
+  color: white;
+  transition: 0.3s;
+}
+
+.filters button:hover {
+  background: #b71c1c;
+}
+
+/* ANIMATION SCROLL */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
