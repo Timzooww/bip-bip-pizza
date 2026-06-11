@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #fff7f0;
-  color: #333;
 }
 
 /* HEADER */
@@ -11,14 +10,13 @@ body {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  padding: 20px;
-  background: #ff3c2f;
+  background: #e53935;
   color: white;
+  padding: 20px;
 }
 
 .logo {
   width: 60px;
-  height: 60px;
   border-radius: 50%;
 }
 
@@ -26,22 +24,7 @@ body {
 .hero {
   text-align: center;
   padding: 60px 20px;
-  background: url("images/hero.jpg") center/cover;
-  color: white;
-}
-
-.hero h2 {
-  font-size: 2.5rem;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #ff3c2f;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
+  background: #ffccbc;
 }
 
 /* TITRES */
@@ -50,7 +33,7 @@ body {
   margin: 40px 0 20px;
 }
 
-/* GRID PIZZAS */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -61,46 +44,44 @@ body {
 /* CARDS */
 .card {
   background: white;
+  padding: 15px;
   border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
-  padding-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.card h3 {
-  margin: 10px 0 5px;
-}
-
-.card p {
+.ingredients {
   font-size: 14px;
-  color: #666;
-}
-
-.card span {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #ff3c2f;
+  color: #555;
+  margin-top: 8px;
 }
 
 /* CONTACT */
 .contact {
   text-align: center;
-  padding: 40px 20px;
-  background: #fff1e6;
+  padding: 40px;
+  background: #ffe0b2;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 15px;
   background: #111;
   color: white;
+}
+
+/* ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
