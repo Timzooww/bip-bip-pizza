@@ -4,6 +4,35 @@ body {
   background: #fff3e6;
 }
 
+/* LOADER */
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #e53935;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: white;
+}
+
+.pizza-loader {
+  font-size: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#loader.hide {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
 /* HEADER */
 .header {
   display: flex;
@@ -62,7 +91,7 @@ body {
   cursor: pointer;
 }
 
-/* PRICE BOX */
+/* PRICE */
 .price-box {
   text-align: center;
   background: white;
@@ -71,11 +100,6 @@ body {
   border-radius: 10px;
   max-width: 500px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.price-box h3 {
-  margin: 0;
-  color: #e53935;
 }
 
 /* GRID */
@@ -98,7 +122,7 @@ body {
   transition: all 0.6s ease;
 }
 
-/* SHOW ON SCROLL */
+/* SCROLL SHOW */
 .card.show {
   opacity: 1;
   transform: translateY(0);
