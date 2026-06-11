@@ -1,61 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bip Bip Pizza Agen</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bip Bip Pizza</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-<img src="images/logo.png" class="logo">
-<h1>Bip Bip Pizza</h1>
-<p>57 Boulevard de la Liberté, 47000 Agen</p>
-<a class="btn" href="tel:0553676767">📞 05 53 67 67 67</a>
-</header>
 
-<section class="hero">
-<div>
-<h2>Depuis 1998</h2>
-<p>Pizzas artisanales • Sur place • À emporter</p>
-</div>
-</section>
+  <!-- HEADER -->
+  <header class="header">
+    <img src="images/logo.png" class="logo" alt="Logo">
+    <h1>Bip Bip Pizza</h1>
+  </header>
 
-<section class="card">
-<h2>Horaires</h2>
-<p>Tous les jours : 11h00–14h00 / 18h00–22h30</p>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Les meilleures pizzas artisanales 🍕</h2>
+    <p>Fraîcheur, goût et tradition italienne</p>
+    <a href="#menu" class="btn">Voir le menu</a>
+  </section>
 
-<section class="card">
-<h2>Tarifs</h2>
-<ul>
-<li>Classiques : S 9€ • M 12€ • L 15€ • XL 18€</li>
-<li>Gourmandes : S 10,50€ • M 13,50€ • L 16,50€ • XL 19,50€</li>
-<li>Festives : S 11,50€ • M 14,50€ • L 17,50€ • XL 20,50€</li>
-</ul>
-</section>
+  <!-- MENU -->
+  <section id="menu">
+    <h2 class="section-title">Notre Menu</h2>
 
-<section class="card">
-<h2>Les Classiques</h2>
-<p>Madison, Miami, Santa Barbara, Washington, Dallas, San Diego, Orlando, Manhattan, Malibu, Ottawa.</p>
-</section>
+    <div class="grid">
 
-<section class="card">
-<h2>Les Gourmandes</h2>
-<p>Chicago, San Francisco, Santa Fe, Memphis, Cheyenne, Hollywood, Maxim's, Colorado, Alaska, Saint Louis, Kentucky, Atlanta, Minneapolis, Detroit, El Paso, Toronto, Reno, New York, Los Angeles, Houston.</p>
-</section>
+      <div class="card">
+        <img src="images/margherita.jpg">
+        <h3>Margherita</h3>
+        <p>Tomate, mozzarella, basilic</p>
+        <span>10 €</span>
+      </div>
 
-<section class="card">
-<h2>Les Festives</h2>
-<p>Chef, California, Las Vegas, Providence, Santa Monica, Newport, Charlotte.</p>
-</section>
+      <div class="card">
+        <img src="images/pepperoni.jpg">
+        <h3>Pepperoni</h3>
+        <p>Tomate, mozzarella, pepperoni</p>
+        <span>12 €</span>
+      </div>
 
-<section class="card">
-<h2>Nous trouver</h2>
-<p>57 Boulevard de la Liberté, 47000 Agen</p>
-<a class="btn" target="_blank" href="https://maps.google.com/?q=57+Boulevard+de+la+Liberte+47000+Agen">Voir l'itinéraire</a>
-</section>
+      <div class="card">
+        <img src="images/4fromages.jpg">
+        <h3>4 Fromages</h3>
+        <p>Mozzarella, gorgonzola, emmental, parmesan</p>
+        <span>13 €</span>
+      </div>
 
-<footer>Bip Bip Pizza Agen</footer>
-</body></html>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>📍 12 Rue de la Pizza, 82000 Montauban</p>
+    <p>📞 06 00 00 00 00</p>
+    <p>🕒 Ouvert 11h - 23h</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Bip Bip Pizza - Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
