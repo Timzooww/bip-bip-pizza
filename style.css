@@ -17,7 +17,6 @@ body {
 
 .logo {
   width: 60px;
-  border-radius: 50%;
 }
 
 /* HERO */
@@ -25,6 +24,30 @@ body {
   text-align: center;
   padding: 40px;
   background: #ffccbc;
+}
+
+/* TOP BUTTONS */
+.top-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.map {
+  background: #1e88e5;
+}
+
+.call {
+  background: #43a047;
 }
 
 /* FILTERS */
@@ -40,13 +63,6 @@ body {
   background: #e53935;
   color: white;
   border-radius: 8px;
-  cursor: pointer;
-}
-
-/* TITLES */
-h2 {
-  text-align: center;
-  margin-top: 40px;
 }
 
 /* GRID */
@@ -63,40 +79,7 @@ h2 {
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
 }
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* BUTTONS */
-.buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.btn {
-  flex: 1;
-  text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-}
-
-.map {
-  background: #1e88e5;
-}
-
-.call {
-  background: #43a047;
-}
-
-.map:hover { background: #1565c0; }
-.call:hover { background: #2e7d32; }
 
 /* FOOTER */
 footer {
