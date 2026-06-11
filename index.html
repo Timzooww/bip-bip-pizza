@@ -9,139 +9,112 @@
 
 <body>
 
-<!-- HEADER -->
-<header class="header fade-in">
+<header class="header">
   <img src="images/logo.png" class="logo">
   <h1>Bip Bip Pizza</h1>
 </header>
 
-<!-- HERO -->
-<section class="hero fade-in">
+<section class="hero">
   <h2>🍕 Pizzas artisanales</h2>
-  <p>Fraîcheur • Goût • Tradition</p>
+  <p>Fraîcheur • Tradition • Goût</p>
 </section>
 
 <!-- FILTRES -->
-<div class="filters fade-in">
-  <button onclick="filterPizzas('all')">Toutes</button>
-  <button onclick="filterPizzas('classiques')">Classiques</button>
-  <button onclick="filterPizzas('gourmandes')">Gourmandes</button>
-  <button onclick="filterPizzas('festives')">Festives</button>
+<div class="filters">
+  <button onclick="filter('all')">Toutes</button>
+  <button onclick="filter('classiques')">Classiques</button>
+  <button onclick="filter('gourmandes')">Gourmandes</button>
+  <button onclick="filter('festives')">Festives</button>
 </div>
 
 <!-- MENU -->
 <section class="menu">
 
 <!-- CLASSIQUES -->
-<h2 class="section-title fade-in">LES CLASSIQUES</h2>
-<div class="grid classics">
+<h2>LES CLASSIQUES</h2>
+<div class="grid classiques">
 
-  <div class="card fade-in">
-    <h3>Madison • Margherita</h3>
-    <p class="ingredients">Base tomate ou crème fraîche, emmental, olives, origan</p>
-  </div>
-
-  <div class="card fade-in">
-    <h3>Miami • Reine</h3>
-    <p class="ingredients">Tomate, champignons, jambon, emmental, olives, origan</p>
-  </div>
-
-  <div class="card fade-in">
-    <h3>Santa Barbara • Carbonara</h3>
-    <p class="ingredients">Crème fraîche, mozzarella, lardons, oignons, emmental, olives</p>
-  </div>
+  <div class="card">Madison • Margherita<p>Base tomate ou crème, emmental, olives, origan</p></div>
+  <div class="card">Miami • Reine<p>Tomate, champignons, jambon, emmental, olives</p></div>
+  <div class="card">Santa Barbara • Carbonara<p>Crème, lardons, oignons, mozzarella</p></div>
+  <div class="card">Washington • Bolognaise<p>Steak haché, œuf, champignons</p></div>
+  <div class="card">Dallas • Orientale<p>Merguez, poivrons, champignons</p></div>
+  <div class="card">San Diego • Indienne<p>Poulet, curry, crème</p></div>
+  <div class="card">Orlando<p>Chèvre, miel, oignons</p></div>
+  <div class="card">Manhattan ⭐<p>Poulet, mozzarella, poivrons</p></div>
+  <div class="card">Malibu<p>Thon, crème, emmental</p></div>
+  <div class="card">Ottawa ⭐<p>Anchois, câpres</p></div>
 
 </div>
 
 <!-- GOURMANDES -->
-<h2 class="section-title fade-in">LES GOURMANDES</h2>
+<h2>LES GOURMANDES</h2>
 <div class="grid gourmandes">
 
-  <div class="card fade-in">
-    <h3>Chicago • Tartiflette</h3>
-    <p class="ingredients">Crème fraîche, pommes de terre, lardons, reblochon</p>
-  </div>
-
-  <div class="card fade-in">
-    <h3>Memphis ⭐</h3>
-    <p class="ingredients">Jambon de pays, roquette, parmesan</p>
-  </div>
+  <div class="card">Chicago • Tartiflette<p>Pommes de terre, lardons, reblochon</p></div>
+  <div class="card">San Francisco<p>Merguez, légumes, œuf</p></div>
+  <div class="card">Memphis ⭐<p>Jambon de pays, roquette</p></div>
+  <div class="card">Cheyenne<p>Raclette, jambon</p></div>
+  <div class="card">Hollywood<p>Magret, champignons</p></div>
+  <div class="card">Maxim's<p>Magret, reblochon</p></div>
+  <div class="card">Colorado<p>Jambon, pesto</p></div>
+  <div class="card">Alaska<p>Saumon, crème curry</p></div>
+  <div class="card">Saint Louis<p>Saumon, champignons</p></div>
+  <div class="card">Kentucky<p>BBQ, poulet</p></div>
+  <div class="card">Atlanta<p>Steak, cheddar, BBQ</p></div>
+  <div class="card">Minneapolis • 4 Fromages<p>Roquefort, chèvre, emmental</p></div>
+  <div class="card">Detroit • Kebab<p>Viande kebab, sauce blanche</p></div>
+  <div class="card">El Paso • Mexicaine<p>Merguez, épices</p></div>
+  <div class="card">Toronto<p>Légumes variés</p></div>
+  <div class="card">Reno<p>Chèvre, miel</p></div>
+  <div class="card">New York<p>Chorizo, jambon</p></div>
+  <div class="card">Los Angeles<p>Figues, miel, chèvre</p></div>
+  <div class="card">Houston ⭐<p>Pesto, roquette, mozzarella</p></div>
 
 </div>
 
 <!-- FESTIVES -->
-<h2 class="section-title fade-in">LES FESTIVES</h2>
+<h2>LES FESTIVES</h2>
 <div class="grid festives">
 
-  <div class="card fade-in">
-    <h3>Chef ⭐</h3>
-    <p class="ingredients">Chorizo, lardons, coppa, gorgonzola</p>
-  </div>
-
-  <div class="card fade-in">
-    <h3>California ⭐</h3>
-    <p class="ingredients">Chorizo, mozzarella, champignons, poivrons</p>
-  </div>
+  <div class="card">Chef ⭐<p>Chorizo, lardons, coppa</p></div>
+  <div class="card">California ⭐<p>Chorizo, poivrons</p></div>
+  <div class="card">Las Vegas<p>Magret, foie gras</p></div>
+  <div class="card">Providence<p>Pétoncles, pesto</p></div>
+  <div class="card">Santa Monica<p>Magret, pommes</p></div>
+  <div class="card">Newport<p>Poulet, chèvre</p></div>
+  <div class="card">Charlotte<p>Canard séché, parmesan</p></div>
 
 </div>
 
 </section>
 
 <!-- CONTACT -->
-<section class="contact fade-in">
+<section class="contact">
   <h2>Contact</h2>
-  <p>📍 Adresse de la pizzeria</p>
+  <p>📍 Adresse</p>
   <p>📞 Téléphone</p>
 </section>
 
-<footer>
-  <p>© 2026 Bip Bip Pizza</p>
-</footer>
-
 <script>
-/* ANIMATION SCROLL */
-const elements = document.querySelectorAll('.fade-in');
+function filter(type) {
+  const all = document.querySelectorAll('.grid');
 
-function showOnScroll() {
-  const trigger = window.innerHeight * 0.85;
+  all.forEach(g => g.style.display = 'grid');
 
-  elements.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < trigger) el.classList.add('show');
-  });
-}
-
-window.addEventListener('scroll', showOnScroll);
-showOnScroll();
-
-/* FILTRES */
-function filterPizzas(category) {
-  const classics = document.querySelector('.classics');
-  const gourmands = document.querySelector('.gourmandes');
-  const festives = document.querySelector('.festives');
-
-  if (category === 'all') {
-    classics.style.display = 'grid';
-    gourmands.style.display = 'grid';
-    festives.style.display = 'grid';
+  if (type === 'classiques') {
+    document.querySelector('.gourmandes').style.display = 'none';
+    document.querySelector('.festives').style.display = 'none';
   }
 
-  if (category === 'classiques') {
-    classics.style.display = 'grid';
-    gourmands.style.display = 'none';
-    festives.style.display = 'none';
+  if (type === 'gourmandes') {
+    document.querySelector('.classiques').style.display = 'none';
+    document.querySelector('.festives').style.display = 'none';
   }
 
-  if (category === 'gourmandes') {
-    classics.style.display = 'none';
-    gourmands.style.display = 'grid';
-    festives.style.display = 'none';
-  }
-
-  if (category === 'festives') {
-    classics.style.display = 'none';
-    gourmands.style.display = 'none';
-    festives.style.display = 'grid';
+  if (type === 'festives') {
+    document.querySelector('.classiques').style.display = 'none';
+    document.querySelector('.gourmandes').style.display = 'none';
   }
 }
 </script>
