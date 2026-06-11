@@ -1,10 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff7f0;
+  color: #333;
+}
 
-body{font-family:Poppins,sans-serif;background:#F7F4EE;color:#222;margin:0}
-header{text-align:center;padding:30px}
-.logo{max-width:260px;width:90%}
-.hero{height:420px;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=80');background-size:cover;color:#fff}
-h1,h2{color:#B22222}
-.hero h2{color:white;font-size:3rem}
-.card{max-width:1100px;margin:20px auto;padding:25px;background:white;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
-.btn{background:#B22222;color:white;text-decoration:none;padding:12px 20px;border-radius:10px}
-footer{text-align:center;padding:40px}
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background: #ff3c2f;
+  color: white;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: url("images/hero.jpg") center/cover;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff3c2f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* TITRES */
+.section-title {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+/* GRID PIZZAS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff3c2f;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff1e6;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: white;
+}
