@@ -27,7 +27,7 @@ body {
   background: #ffccbc;
 }
 
-/* BUTTONS TOP */
+/* BUTTONS */
 .top-buttons {
   margin-top: 15px;
   display: flex;
@@ -73,6 +73,11 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.price-box h3 {
+  margin: 0;
+  color: #e53935;
+}
+
 /* GRID */
 .grid {
   display: grid;
@@ -81,7 +86,7 @@ body {
   padding: 20px;
 }
 
-/* CARD + ANIMATION */
+/* CARD */
 .card {
   background: white;
   padding: 15px;
@@ -89,27 +94,17 @@ body {
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 
   opacity: 0;
-  transform: translateY(15px);
-  animation: fadeIn 0.6s ease forwards;
-
-  transition: all 0.3s ease;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
 }
 
-/* DELAY ANIMATION */
-.card:nth-child(1) { animation-delay: 0.05s; }
-.card:nth-child(2) { animation-delay: 0.1s; }
-.card:nth-child(3) { animation-delay: 0.15s; }
-.card:nth-child(4) { animation-delay: 0.2s; }
-.card:nth-child(5) { animation-delay: 0.25s; }
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* SHOW ON SCROLL */
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* HOVER RED EFFECT */
+/* HOVER RED */
 .card:hover {
   transform: translateY(-6px) scale(1.02);
   border: 2px solid #e53935;
