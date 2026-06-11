@@ -1,1 +1,1 @@
-# bip-bip-pizza
+Déploiement GitHub Pages : Settings > Pages > Deploy from Branch.
