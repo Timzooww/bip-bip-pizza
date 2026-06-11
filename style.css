@@ -17,16 +17,17 @@ body {
 
 .logo {
   width: 60px;
+  border-radius: 50%;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 50px;
+  padding: 40px;
   background: #ffccbc;
 }
 
-/* FILTRES */
+/* FILTERS */
 .filters {
   text-align: center;
   margin: 20px;
@@ -42,7 +43,7 @@ body {
   cursor: pointer;
 }
 
-/* TITRES */
+/* TITLES */
 h2 {
   text-align: center;
   margin-top: 40px;
@@ -69,9 +70,38 @@ h2 {
   transform: translateY(-5px);
 }
 
-/* CONTACT */
-.contact {
+/* BUTTONS */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  flex: 1;
   text-align: center;
-  padding: 40px;
-  background: #ffe0b2;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.map {
+  background: #1e88e5;
+}
+
+.call {
+  background: #43a047;
+}
+
+.map:hover { background: #1565c0; }
+.call:hover { background: #2e7d32; }
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: white;
 }
