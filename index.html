@@ -9,229 +9,89 @@
 
 <body>
 
+<!-- HEADER -->
 <header class="header fade-in">
-  <img src="images/logo.png" class="logo" alt="logo">
+  <img src="images/logo.png" class="logo">
   <h1>Bip Bip Pizza</h1>
 </header>
 
+<!-- HERO -->
 <section class="hero fade-in">
   <h2>🍕 Pizzas artisanales</h2>
   <p>Fraîcheur • Goût • Tradition</p>
 </section>
 
+<!-- FILTRES -->
+<div class="filters fade-in">
+  <button onclick="filterPizzas('all')">Toutes</button>
+  <button onclick="filterPizzas('classiques')">Classiques</button>
+  <button onclick="filterPizzas('gourmandes')">Gourmandes</button>
+  <button onclick="filterPizzas('festives')">Festives</button>
+</div>
+
 <!-- MENU -->
 <section class="menu">
 
-  <h2 class="section-title fade-in">LES CLASSIQUES</h2>
+<!-- CLASSIQUES -->
+<h2 class="section-title fade-in">LES CLASSIQUES</h2>
+<div class="grid classics">
 
-  <div class="grid">
-
-    <div class="card fade-in">
-      <h3>Madison • Margherita</h3>
-      <p class="ingredients">Base tomate ou crème fraîche, emmental, olives, origan</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Miami • Reine</h3>
-      <p class="ingredients">Tomate, champignons, jambon, emmental, olives, origan</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Santa Barbara • Carbonara</h3>
-      <p class="ingredients">Crème fraîche, mozzarella, lardons, oignons, emmental, olives, origan</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Washington • Bolognaise</h3>
-      <p class="ingredients">Tomate, champignons, steak haché, œuf, emmental, olives, origan</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Dallas • Orientale</h3>
-      <p class="ingredients">Tomate, champignons, merguez, poivrons, emmental, olives, origan</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>San Diego • Indienne</h3>
-      <p class="ingredients">Tomate, champignons, poulet, crème curry, emmental, olives, origan</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Orlando</h3>
-      <p class="ingredients">Tomate, mozzarella, oignons, chèvre, miel, emmental, olives, origan</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Manhattan ⭐</h3>
-      <p class="ingredients">Crème fraîche, moutarde, mozzarella, poivrons, oignons, filet de poulet</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Malibu</h3>
-      <p class="ingredients">Crème fraîche, mozzarella, thon, persillade maison, emmental, olives, origan</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Ottawa ⭐</h3>
-      <p class="ingredients">Tomate, anchois, câpres, emmental, olives, origan</p>
-    </div>
-
+  <div class="card fade-in">
+    <h3>Madison • Margherita</h3>
+    <p class="ingredients">Base tomate ou crème fraîche, emmental, olives, origan</p>
   </div>
 
-  <h2 class="section-title fade-in">LES GOURMANDES</h2>
-
-  <div class="grid">
-
-    <div class="card fade-in">
-      <h3>Chicago • Tartiflette</h3>
-      <p class="ingredients">Crème fraîche, mozzarella, pommes de terre, lardons, reblochon</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>San Francisco • Super Orientale</h3>
-      <p class="ingredients">Tomate, mozzarella, aubergines, courgettes, merguez, poivrons, œuf</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Santa Fe</h3>
-      <p class="ingredients">Tomate, champignons, poulet, ananas, curry</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Memphis ⭐</h3>
-      <p class="ingredients">Tomate, mozzarella, jambon de pays, roquette, huile d'olive, parmesan</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Cheyenne</h3>
-      <p class="ingredients">Crème fraîche, mozzarella, pommes de terre, jambon de pays, raclette</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Hollywood</h3>
-      <p class="ingredients">Tomate, champignons, magret, poivrons, crème fraîche</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Maxim's</h3>
-      <p class="ingredients">Crème fraîche, mozzarella, magret, poivrons, reblochon</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Colorado</h3>
-      <p class="ingredients">Crème fraîche, mozzarella, tomates fraîches, jambon de pays, pesto</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Alaska</h3>
-      <p class="ingredients">Tomate, champignons, saumon, crème curry</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Saint Louis</h3>
-      <p class="ingredients">Crème fraîche, mozzarella, champignons, saumon</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Kentucky</h3>
-      <p class="ingredients">Tomate, mozzarella, oignons frits, poulet, poivrons, BBQ</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Atlanta</h3>
-      <p class="ingredients">Sauce BBQ, cheddar, steak, oignons, poivrons, sauce burger</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Minneapolis • 4 Fromages</h3>
-      <p class="ingredients">Mozzarella, roquefort, chèvre, emmental</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Detroit • Kebab</h3>
-      <p class="ingredients">Tomate, viande kebab, oignons, poivrons, sauce blanche</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>El Paso • Mexicaine</h3>
-      <p class="ingredients">Tomate, mozzarella, steak haché, merguez, épices</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Toronto</h3>
-      <p class="ingredients">Pommes de terre, oignons, poivrons, aubergines, courgettes</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Reno</h3>
-      <p class="ingredients">Crème fraîche, chèvre, lardons, miel</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>New York</h3>
-      <p class="ingredients">Tomate, champignons, jambon, merguez, chorizo</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Los Angeles</h3>
-      <p class="ingredients">Tomate, chèvre, figues, miel</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Houston ⭐</h3>
-      <p class="ingredients">Crème pesto, chèvre, mozzarella, tomates fraîches, roquette</p>
-    </div>
-
+  <div class="card fade-in">
+    <h3>Miami • Reine</h3>
+    <p class="ingredients">Tomate, champignons, jambon, emmental, olives, origan</p>
   </div>
 
-  <h2 class="section-title fade-in">LES FESTIVES</h2>
-
-  <div class="grid">
-
-    <div class="card fade-in">
-      <h3>Chef ⭐</h3>
-      <p class="ingredients">Tomate, mozzarella, emmental, chorizo, lardons, coppa, gorgonzola</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>California ⭐</h3>
-      <p class="ingredients">Tomate, chorizo, mozzarella, champignons, poivrons</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Las Vegas</h3>
-      <p class="ingredients">Tomate, gésier, magret, foie gras</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Providence</h3>
-      <p class="ingredients">Tomate, mozzarella, crème fraîche, fusillis, pétoncles, pesto</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Santa Monica</h3>
-      <p class="ingredients">Tomate, magret, pommes, pruneaux</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Newport</h3>
-      <p class="ingredients">Crème fraîche, mozzarella, jambon, poulet, chèvre, reblochon</p>
-    </div>
-
-    <div class="card fade-in">
-      <h3>Charlotte</h3>
-      <p class="ingredients">Tomates séchées, canard séché, parmesan, persillade maison</p>
-    </div>
-
+  <div class="card fade-in">
+    <h3>Santa Barbara • Carbonara</h3>
+    <p class="ingredients">Crème fraîche, mozzarella, lardons, oignons, emmental, olives</p>
   </div>
+
+</div>
+
+<!-- GOURMANDES -->
+<h2 class="section-title fade-in">LES GOURMANDES</h2>
+<div class="grid gourmandes">
+
+  <div class="card fade-in">
+    <h3>Chicago • Tartiflette</h3>
+    <p class="ingredients">Crème fraîche, pommes de terre, lardons, reblochon</p>
+  </div>
+
+  <div class="card fade-in">
+    <h3>Memphis ⭐</h3>
+    <p class="ingredients">Jambon de pays, roquette, parmesan</p>
+  </div>
+
+</div>
+
+<!-- FESTIVES -->
+<h2 class="section-title fade-in">LES FESTIVES</h2>
+<div class="grid festives">
+
+  <div class="card fade-in">
+    <h3>Chef ⭐</h3>
+    <p class="ingredients">Chorizo, lardons, coppa, gorgonzola</p>
+  </div>
+
+  <div class="card fade-in">
+    <h3>California ⭐</h3>
+    <p class="ingredients">Chorizo, mozzarella, champignons, poivrons</p>
+  </div>
+
+</div>
 
 </section>
 
 <!-- CONTACT -->
 <section class="contact fade-in">
   <h2>Contact</h2>
-  <p>📍 Votre adresse ici</p>
-  <p>📞 Votre numéro</p>
+  <p>📍 Adresse de la pizzeria</p>
+  <p>📞 Téléphone</p>
 </section>
 
 <footer>
@@ -239,22 +99,51 @@
 </footer>
 
 <script>
+/* ANIMATION SCROLL */
 const elements = document.querySelectorAll('.fade-in');
 
 function showOnScroll() {
-  const triggerBottom = window.innerHeight * 0.85;
+  const trigger = window.innerHeight * 0.85;
 
   elements.forEach(el => {
-    const boxTop = el.getBoundingClientRect().top;
-
-    if (boxTop < triggerBottom) {
-      el.classList.add('show');
-    }
+    const top = el.getBoundingClientRect().top;
+    if (top < trigger) el.classList.add('show');
   });
 }
 
 window.addEventListener('scroll', showOnScroll);
 showOnScroll();
+
+/* FILTRES */
+function filterPizzas(category) {
+  const classics = document.querySelector('.classics');
+  const gourmands = document.querySelector('.gourmandes');
+  const festives = document.querySelector('.festives');
+
+  if (category === 'all') {
+    classics.style.display = 'grid';
+    gourmands.style.display = 'grid';
+    festives.style.display = 'grid';
+  }
+
+  if (category === 'classiques') {
+    classics.style.display = 'grid';
+    gourmands.style.display = 'none';
+    festives.style.display = 'none';
+  }
+
+  if (category === 'gourmandes') {
+    classics.style.display = 'none';
+    gourmands.style.display = 'grid';
+    festives.style.display = 'none';
+  }
+
+  if (category === 'festives') {
+    classics.style.display = 'none';
+    gourmands.style.display = 'none';
+    festives.style.display = 'grid';
+  }
+}
 </script>
 
 </body>
