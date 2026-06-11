@@ -18,7 +18,6 @@
   <h2>🍕 Pizzas artisanales</h2>
   <p>Fraîcheur • Tradition • Goût</p>
 
-  <!-- BOUTONS HAUT -->
   <div class="top-buttons">
     <a class="btn map"
        href="https://www.google.com/maps?q=57+boulevard+Liberté+47000+Agen"
@@ -40,7 +39,6 @@
   <button onclick="filter('festives')">Festives</button>
 </div>
 
-<!-- MENU -->
 <section>
 
 <!-- CLASSIQUES -->
@@ -56,7 +54,7 @@
   <div class="card"><h3>Madison • Margherita</h3><p>Tomate, emmental, olives</p></div>
   <div class="card"><h3>Miami • Reine</h3><p>Jambon, champignons</p></div>
   <div class="card"><h3>Santa Barbara • Carbonara</h3><p>Lardons, crème</p></div>
-  <div class="card"><h3>Washington • Bolognaise</h3><p>Steak haché, œuf</p></div>
+  <div class="card"><h3>Washington • Bolognaise</h3><p>Steak, œuf</p></div>
   <div class="card"><h3>Dallas • Orientale</h3><p>Merguez, poivrons</p></div>
   <div class="card"><h3>San Diego • Indienne</h3><p>Poulet curry</p></div>
   <div class="card"><h3>Orlando</h3><p>Chèvre, miel</p></div>
@@ -79,10 +77,10 @@
   <div class="card"><h3>Chicago • Tartiflette</h3><p>Pommes de terre, reblochon</p></div>
   <div class="card"><h3>San Francisco</h3><p>Merguez, légumes</p></div>
   <div class="card"><h3>Memphis ⭐</h3><p>Jambon de pays</p></div>
-  <div class="card"><h3>Cheyenne</h3><p>Raclette, jambon</p></div>
+  <div class="card"><h3>Cheyenne</h3><p>Raclette</p></div>
   <div class="card"><h3>Hollywood</h3><p>Magret</p></div>
   <div class="card"><h3>Maxim's</h3><p>Magret, reblochon</p></div>
-  <div class="card"><h3>Colorado</h3><p>Pesto, jambon</p></div>
+  <div class="card"><h3>Colorado</h3><p>Pesto jambon</p></div>
   <div class="card"><h3>Alaska</h3><p>Saumon curry</p></div>
   <div class="card"><h3>Saint Louis</h3><p>Saumon</p></div>
   <div class="card"><h3>Kentucky</h3><p>BBQ poulet</p></div>
@@ -138,17 +136,28 @@ function filter(type) {
     g.style.display = 'none';
     f.style.display = 'none';
   }
-
   if (type === 'gourmandes') {
     c.style.display = 'none';
     f.style.display = 'none';
   }
-
   if (type === 'festives') {
     c.style.display = 'none';
     g.style.display = 'none';
   }
 }
+
+/* SCROLL ANIMATION */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+document.querySelectorAll('.card').forEach(el => {
+  observer.observe(el);
+});
 </script>
 
 </body>
